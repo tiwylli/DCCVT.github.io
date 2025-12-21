@@ -211,40 +211,53 @@ superior ability of DCCVT against state-of-the-art methods in mesh quality and r
 <!-- Direct optim -->
   <section class="section">
     <div class="container is-max-desktop is-four-fifths">
-      <h2 class="title is-3">Direct Optimization (Thingi32 dataset)</h2>
+      <h2 class="title is-3">Joint Optimization of Sites and SDF (Thingi32 dataset)</h2>
       <table class="table full-width"> 
         <tr>
-            <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/statue_small.glb" ar shadow-intensity="1"
-                camera-controls touch-action="pan-y" poster="static/meshes/statue_small_poster.webp"></model-viewer></td>
-            <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/statue.glb" ar shadow-intensity="1"
-                camera-controls touch-action="pan-y" poster="static/meshes/statue_poster.webp"></model-viewer></td>
-            <td class="nopadding"><model-viewer alt="mesh"  src="static/meshes/statue_ref.glb" ar shadow-intensity="1"
-                camera-controls touch-action="pan-y" poster="static/meshes/statue_ref_poster.webp"></model-viewer>
+            <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/cat_voromesh_32.glb" ar shadow-intensity="1"
+                camera-controls touch-action="pan-y" orientation="0deg -90deg 0deg" data-base-color="0.7,0.5,0.2" exposure="0.6"></model-viewer></td>
+            <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/cat_dccvt_24N.glb" ar shadow-intensity="1"
+                camera-controls touch-action="pan-y" orientation=" 0deg -90deg 0deg" data-base-color="0.2,0.5,0.7" exposure="0.6"></model-viewer></td>
+            <td class="nopadding"><model-viewer alt="mesh"  src="static/meshes/cat_gt.glb" ar shadow-intensity="1"
+                camera-controls touch-action="pan-y" orientation=" 0deg -90deg 0deg" data-base-color="0.6,0.6,0.6" exposure="0.6"></model-viewer>
           </div>
         </tr>
-        <tr>
-          <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/gargoyle_small.glb" ar shadow-intensity="1"
-              camera-controls touch-action="pan-y" poster="static/meshes/gargoyle_small_poster.webp"></model-viewer></td>
-          <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/gargoyle.glb" ar shadow-intensity="1"
-              camera-controls touch-action="pan-y" poster="static/meshes/gargoyle_poster.webp"></model-viewer></td>
-          <td class="nopadding"><model-viewer alt="mesh"  src="static/meshes/gargoyle_norm.glb" ar shadow-intensity="1"
-              camera-controls touch-action="pan-y" poster="static/meshes/gargoyle_norm_poster.webp"></model-viewer>
-        </div>
-      </tr>
+        </tr>
         <tr>
           <td>
             <h2 class="subtitle has-text-centered nopadding">VoroMesh (32)</h2>
           </td>
           <td>
-            <h2 class="subtitle has-text-centered nopadding">VoroMesh (128)</h2>
+            <h2 class="subtitle has-text-centered nopadding">DCCVT (24 N)</h2>
           </td>
           <td>
             <h2 class="subtitle has-text-centered nopadding">Ground Truth</h2>
           </td>
         </tr>
+        <tr>
+          <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/gargoyle_voromesh_32.glb" ar shadow-intensity="1"
+              camera-controls touch-action="pan-y" orientation=" 0deg -90deg 0deg" data-base-color="0.7,0.5,0.2" exposure="0.6"></model-viewer></td>
+          <td class="nopadding"><model-viewer alt="mesh" src="static/meshes/gargoyle_dccvt_32NU.glb" ar shadow-intensity="1"
+              camera-controls touch-action="pan-y" orientation=" 0deg -90deg 0deg" data-base-color="0.2,0.5,0.7" exposure="0.6"></model-viewer></td>
+          <td class="nopadding"><model-viewer alt="mesh"  src="static/meshes/gargoyle_mt_32.glb" ar shadow-intensity="1"
+              camera-controls touch-action="pan-y" orientation=" 0deg -90deg 0deg" data-base-color="0.7,0.5,0.2" exposure="0.6"></model-viewer>
+        </div>
+        </tr>
+        <tr>
+          <td>
+            <h2 class="subtitle has-text-centered nopadding">VoroMesh (32)</h2>
+          </td>
+          <td>
+            <h2 class="subtitle has-text-centered nopadding">DCCVT (32 NU)</h2>
+          </td>
+          <td>
+            <h2 class="subtitle has-text-centered nopadding">DMtet (32)</h2>
+          </td>
+        </tr>
+      
       </table>
       
-      <table class="table is-hidden-desktop">
+      <!-- <table class="table is-hidden-desktop">
         <tr>
           <td><img class="tabimg" src="static/images/direct/32_dino.jpeg" alt="Image 1"></td>
           <td><img class="tabimg is-hidden-mobile" media="(min-width: 769px)" src="static/images/direct/64_dino.jpeg"
@@ -272,7 +285,7 @@ superior ability of DCCVT against state-of-the-art methods in mesh quality and r
             <h2 class="subtitle has-text-centered">Ground Truth</h2>
           </td>
         </tr>
-      </table>
+      </table> -->
     </div>
   </section>
 
